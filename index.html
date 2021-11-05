@@ -4,7 +4,7 @@
 		<title>הפרופיל שלי</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<meta charset="utf-8" />
-		
+
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
@@ -15,7 +15,27 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
 	</head>
-	<body dir="rtl">
+	<body onload="get_time_for_msg();" dir="rtl">
+    <p id="user_msg"></p>
+
+    <br /><br /><br /><br /><br /><br />
+
+
+    <div class="buttons">
+		<a href="profile.html">,,</a>
+        <button class="btn btn-outline-primary px-4" onclick="go_to_profile();">צפה בפרופיל האישי</button>
+        <button class="btn btn-outline-primary px-4" id="show_social_btn_id" onclick="show_social();">הצג רשתות חברתיות</button>
+    </div>
+
+    <br/><br/>
+
+    <section id="social_section">
+        <ul class="social-list">
+            <li><a href="https://www.facebook.com//" class="fa fa-facebook-f" target="_blank"></a></li>
+            <li><a href="https://www.instagram.com/lior_cohen_11/" class="fa fa-instagram" target="_blank"></a></li>
+            <li><a href="mailto:liorc27272@gmail.com" class="fa fa-at" target="_blank"></a></li>
+        </ul>
+    </section>
 		<script src="script.js"></script>
 	</body>
 </html>
